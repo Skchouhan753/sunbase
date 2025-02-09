@@ -21,8 +21,8 @@ This project is a **Visual Form Designer** built with **HTML, CSS, and Vanilla J
 ## Installation & Setup
 ### 1. Clone the repository
 ```sh
-git clone https://github.com/your-username/visual-form-designer.git
-cd visual-form-designer
+git clone https://github.com/Skchouhan753/sunbase
+cd sunbase
 ```
 
 ### 2. Open in a Browser
