@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Form Preview</title>
+</head>
+<body>
+    <h2>Form Preview</h2>
+    <div id="preview-container"></div>
+    <button id="copy-html">Copy HTML</button>
+
+    <script>
+        const formData = JSON.parse(localStorage.getItem("formData") || "[]");
+        const container = document.getElementById("preview-container");
+
+        formData.forEach(field => {
+            let element;
+            if (field.type === "input" || field.type === "textarea") {
+                element = `<label>${field.label}</label><${field.type} placeholder="${field.placeholder}">`;
+            } else if (field.type === "select") {
+                element = `<label>${field.label}</label><select>${field.options.map(opt => `<option>${opt}</option>`).join("")}</select>`;
+            } else if (field.type === "checkbox") {
+                element = `<label>${field.label} <input type="checkbox"></label>`;
+            }
+            container.innerHTML += element;
+        });
+
+        document.getElementById("copy-html").addEventListener("click", () => {
+            navigator.clipboard.writeText(container.innerHTML);
+            alert("HTML copied!");
+        });
+    </script>
+</body>
+</html>

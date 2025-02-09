@@ -1,0 +1,31 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Designer</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h2>Form designer</h2>
+            <button id="save-btn">Save</button>
+        </header>
+        <div class="main">
+            <aside class="sidebar">
+                <h3>Components</h3>
+                <button class="add-btn" data-type="input">Input <span>+</span></button>
+                <button class="add-btn" data-type="select">Select <span>+</span></button>
+                <button class="add-btn" data-type="textarea">Textarea <span>+</span></button>
+            </aside>
+            <main class="workspace">
+                <div id="form-container"></div>
+            </main>
+        </div>
+    </div>
+    <script src="./seript/script.js"></script>
+    <script src="./seript/dragdrop.js"></script>
+</body>
+</html>

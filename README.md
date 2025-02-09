@@ -1,4 +1,3 @@
-# sunbase
 # Visual Form Designer
 
 ## Overview
@@ -75,7 +74,7 @@ Upload to **GitHub Pages** or **Netlify** for live access.
 The project can be hosted on:
 - **GitHub Pages**
 - **Netlify**
-
+- Any other preferred hosting platform
 
 ## Contributing
 Feel free to fork and contribute via pull requests.
